@@ -20,8 +20,6 @@ def get_names():
     time.sleep(0.5)
 
 # Drawing board function
-# Take status of available cells and current game board
-# Return print of the boards
 def draw_board(av,gb):
     print ('\n'*100)
     print(' Available\n'+
@@ -102,4 +100,5 @@ while True: # Endless loop, until break
     av = '0123456789' # available moves, space for unavailable
     gb = ' '*10 # game board current status
     if not replay():
+        print('Thank you for playing!')
         break
